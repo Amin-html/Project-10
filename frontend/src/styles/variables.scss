@@ -1,0 +1,26 @@
+$bg-dark: #0a0a0a;
+$bg-card: #161616;
+$bg-elevated: #202020;
+$gold: #d4af37;
+$gold-hover: #e8c766;
+$text-primary: #f5f5f5;
+$text-secondary: #999;
+$border-color: #2a2a2a;
+$danger: #e53935;
+$success: #43a047;
+
+:root {
+  --bg-dark: #{$bg-dark};
+  --bg-card: #{$bg-card};
+  --bg-elevated: #{$bg-elevated};
+  --gold: #{$gold};
+  --gold-hover: #{$gold-hover};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --border-color: #{$border-color};
+  --danger: #{$danger};
+  --success: #{$success};
+
+  --radius: 12px;
+  --transition: 0.2s ease;
+}
