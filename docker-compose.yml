@@ -17,7 +17,7 @@ services:
       - ./backend:/app
       - media_data:/app/media
     ports:
-      - "8001:8000"  # тоже смещаем, если Проект 9 может быть поднят одновременно
+      - "8000:8000"  # тоже смещаем, если Проект 9 может быть поднят одновременно
     depends_on:
       - db
     env_file:
@@ -30,7 +30,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     ports:
-      - "3001:3000"
+      - "3000:3000"
     depends_on:
       - backend
 
