@@ -31,4 +31,13 @@
       color: var(--text-primary);
     }
   }
+  .logoutBtn {
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 15px;
+
+  &:hover {
+    color: var(--text-primary);
+  }
+}
 }

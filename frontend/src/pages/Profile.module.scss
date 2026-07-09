@@ -1,0 +1,75 @@
+@import '../styles/variables';
+
+.page {
+  padding: 40px 20px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    margin: 32px 0 16px;
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 20px;
+  max-width: 400px;
+  margin-bottom: 24px;
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+
+    span {
+      color: var(--text-secondary);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.empty {
+  color: var(--text-secondary);
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.orderItem {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.orderMeta {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.orderComment {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-style: italic;
+}
