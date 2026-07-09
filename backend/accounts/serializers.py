@@ -10,12 +10,12 @@ class RegisterSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'email', 'password']
 
-        def create(self, validated_data):
-            return User.objects.create_user(
-                username=validated_data['username'],
-                email=validated_data.get('email', ''),
-                password=validated_data['password']
-            )
+    def create(self, validated_data):
+        return User.objects.create_user(
+            username=validated_data['username'],
+            email=validated_data.get('email', ''),
+            password=validated_data['password']
+        )
 
 class UserProfileSerializer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', read_only=True)
