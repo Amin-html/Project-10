@@ -4,7 +4,7 @@ from .serializers import *
 
 class OrderCreate(generics.CreateAPIView):
     serializer_class = OrderSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def perform_create(self, serializer):
         # привязываем заказ к текущему юзеру автоматически
@@ -12,7 +12,7 @@ class OrderCreate(generics.CreateAPIView):
 
 class MyOrderList(generics.ListAPIView):
     serializer_class = OrderSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         # каждый видит только свои заказы
