@@ -1,0 +1,11 @@
+.title {
+  padding: 40px 0 24px;
+  font-size: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding-bottom: 48px;
+}
