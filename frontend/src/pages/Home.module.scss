@@ -1,0 +1,58 @@
+@import '../styles/variables';
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+}
+
+.sectionTitle {
+  margin: 48px 0 24px;
+  font-size: 28px;
+  border-left: 4px solid var(--gold);
+  padding-left: 12px;
+}
+
+.servicesGrid, .portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.serviceCard, .portfolioCard {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition);
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h3 {
+    padding: 16px 16px 8px;
+    font-size: 17px;
+  }
+}
+
+.price {
+  padding: 0 16px 16px;
+  color: var(--gold);
+  font-weight: 700;
+}
