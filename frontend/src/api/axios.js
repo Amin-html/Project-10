@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:8001/api', // не забудь поменять порт, если сдвигал в docker-compose
+  baseURL: 'http://localhost:8000/api', // не забудь поменять порт, если сдвигал в docker-compose
 })
 
 api.interceptors.request.use((config) => {

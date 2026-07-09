@@ -1,0 +1,48 @@
+@import '../styles/variables';
+
+.card {
+  display: block;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition);
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.body {
+  padding: 16px;
+}
+
+.category {
+  color: var(--gold);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.body h3 {
+  margin: 6px 0 10px;
+  font-size: 17px;
+}
+
+.meta {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 18px;
+}

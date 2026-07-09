@@ -1,0 +1,44 @@
+@import '../styles/variables';
+
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.image {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.category {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.info h1 {
+  margin: 8px 0 16px;
+  font-size: 30px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.duration {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
